@@ -31,7 +31,7 @@ class GraphQLService {
 
     static post = (url, body) => {
         
-        if (url !== undefined && body !== undefined)
+        if (url !== undefined && body !== undefined) {
 
             fetch(url, {
                 method: 'POST',
@@ -40,11 +40,12 @@ class GraphQLService {
             }).then(response => response.json())
             .then(data => data)
             .catch(console.log);
+        }
     }
 
     static put = (url, id, body) => {
 
-        if (url !== undefined || id !== undefined || body !== undefined)
+        if (url !== undefined || id !== undefined || body !== undefined) {
         
             fetch(url + id, {
                 method: 'PUT',
@@ -53,17 +54,19 @@ class GraphQLService {
             }).then(response => response.json())
             .then(data => data)
             .catch(console.log);
+        }
     }
 
     static delete = (url, id) => {
         
-        if (url !== undefined || id !== undefined) 
+        if (url !== undefined || id !== undefined) {
 
             fetch(url + id, {
                 method: 'DELETE'
             }).then(response => response.json())
             .then(data => data)
             .catch(console.log);
+        }
     }
 
 }
