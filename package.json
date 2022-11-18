@@ -25,7 +25,7 @@
     "react-onclickoutside": "^6.7.1",
     "react-relay": "^2.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start HTTPS=true",
